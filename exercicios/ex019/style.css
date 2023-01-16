@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/*-- 
+Tudo que em HTML é ID = # em CSS
+
+Em HTMl é Class = . em CSS
+--*/
+
+body{
+    background-image: linear-gradient(to bottom, purple, pink);
+}
+
+h1#Principal{
+   background-image: linear-gradient(to bottom, white, pink);
+   color: white;
+   background-clip: text;
+   -webkit-background-clip: text;
+
+   -webkit-text-fill-color: transparent;
+}
+
+h1{
+    color: white
+}
+
+h2{
+    color: white
+}
+
+.basico{
+    color: green;
+}
+
+.intermediario{
+    color: yellow;
+}
+
+.avancado{
+    color: red;
+}
