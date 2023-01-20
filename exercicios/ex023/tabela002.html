@@ -12,11 +12,19 @@
 
         table{
             width: 500px;
+            position: relative;
         }
 
-        td, th {
+        td {
             border: 1px solid black;
             padding: 10px;
+        }
+
+        th{
+            border: 1px solid black;
+            padding: 10px;
+            background-color: grey;
+            color: white
         }
 
         tfoot, thead{
@@ -24,14 +32,42 @@
             color: white;
         }
 
+        table thead{
+            display: block;
+        }
+
+        thead > tr > th { 
+            position: sticky;
+            top: -1;
+            background-color: darkgrey;
+        }
+
+        caption{
+            font-weight: Bolder;
+            font-size: 1em;
+            padding: 10px;
+            background-color:lightgray;
+
+        }
+
+        tbody > tr:nth-child(odd) { 
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(even) { 
+            background-color: white;
+        }
+
 
     </style>
 </head>
 <body>
-    <h1>Tabelas maioresl</h1>
+    <h1>Tabelas maiores</h1>
     <!--
         Anatomia para tabelas grandes
         TABLE
+
+          CAPTION
           THEAD
                TR, TD, TH
           TBODY
@@ -42,131 +78,134 @@
     
     <TABLe>
         <thead>
+            <caption>População das Unidades Federativas</caption>
             <tr>
-                 <td>Estado</td>
-                 <td>População</td>
+                 <th scope="col">Estado</th>
+                 <th scope="col">População</th>
             </tr>
         </thead>
-            <tr>
-                 <td>Minas G</td>
-                 <td>21 168 791</td>
-            </tr>
-            <tr>
-                 <td>Rio de Janeiro</td>
-                 <td>17 264 943</td>
-            </tr>
         
         <tbody>
             <tr>
                   <td> São Paulo</td>
-                  <td>45 919 049</td>
+                  <td class="num">45 919 049</td>
             </tr>
             <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+           </tr>
+           <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+           </tr>
+            <tr>
                   <td>Bahia</td>
-                  <td>14 016 906</td>
+                  <td class="num">14 016 906</td>
             </tr>
             <tr>
                   <td>Paraná</td>
-                  <td>10 444 526</td>
+                  <td class="num">10 444 526</td>
             </tr>
             <tr> 
                    <td>Rio Grande do Sul</td>
-                   <td>10 693 929</td>
+                   <td class="num">10 693 929</td>
             </tr>
             <tr>
                     <td>Pernambuco</td>
-                    <td>8 796 448</td>
+                    <td class="num">8 796 448</td>
             </tr>
             <tr>
                 <td>Ceará</td>
-                <td>8 452 381</td>
+                <td class="num">8 452 381</td>
             </tr>
             <tr>
                      <td>Pará</td>
-                    <td>7 581 051</td>
+                    <td class="num">7 581 051</td>
             </tr>
             <tr>
                     <td>Santa Catarina</td>
-                    <td>6 248 436</td>
+                    <td class="num">6 248 436</td>
             </tr>
             <tr>
                     <td>Goiás</td>
-                    <td>6 003 788</td>
+                    <td class="num">6 003 788</td>
             </tr>
             <tr>
                     <td>Maranhão</td>
-                    <td>6 574 789</td>
+                    <td class="num">6 574 789</td>
             </tr>
             <tr>
             <td > Goiás </td >
             <td  class =" num " > 7.018.354</tr >
         <tr >
             <td > Amazonas </td >
-            <td > 4.144.597 </td >
+            <td Class="num"> 4.144.597 </td >
         </tr >
         <tr >
             <td > Espírito Santo </td >
-            <td> 4.018.650 </td>
+            <td Class="num"> 4.018.650 </td>
         </tr >
         <tr>
             <td > Paraíba </td >
-            <td > 4.018.127 </td >
+            <td class="num" > 4.018.127 </td >
         </tr >
         <tr >
             <td > Rio Grande do Norte</td>
-            <td > 3.506.853 </td >
+            <td Class="num" > 3.506.853 </td >
         </tr >
         <tr >
             <td > Mato Grosso </td >
-            <td > 3.484.466 </td >
+            <td Class="num" > 3.484.466 </td >
         </tr >
         <tr >
             <td > Alagoas </td >
-            <td > 3.337.357 </td >
+            <td Class="num" > 3.337.357 </td >
         </tr >
         <tr >
             <td > Piauí </td >
-            <td > 3.273.227 </td >
+            <td Class="num" > 3.273.227 </td >
         </tr >
         <tr >
             <td> Distrito Federal </td >
-            <td   > 3.015.268 </td >
+            <td Class="num"   > 3.015.268 </td >
         </tr >
         <tr >
             <td > Mato Grosso do Sul </td >
-            <td> 2.778.986 </td >
+            <td Class="num"> 2.778.986 </td >
         </tr >
         <tr >
             <td > Sergipe </td >
-            <td > 2.298.696 </td >
+            <td Class="num" > 2.298.696 </td >
         </tr >
         <tr >
             <td > Rondônia </td >
-            <td  > 1.777.225 </td >
+            <td Class="num" > 1.777.225 </td >
         </tr >
         <tr >
             <td > Tocantins </td >
-            <td > 1.572.866 </td >
+            <td Class="num"> 1.572.866 </td >
         </tr >
         <tr >
             <td > Acre </td >
-            <td > 881.935 </td >
+            <td Class="num"> 881.935 </td >
         </tr >
         <tr >
             <td > Amapá </td >
-            <td > 845.731 </td >
+            <td Class="num"> 845.731 </td >
         </tr >
         <tr >
             <td > Roraima </td >
-            <td > 605.761 </td >
+            <td Class="num" > 605.761 </td >
         </tr >
         </tbody>
         <tfoot>
             <tr>
-                   <th>Total de habitantes</th>
-                   <td>0000000</td>
+                   <th scope="rol">Total de habitantes</th>
+                   <td>210 147 125</td>
             </tr>
         </tfoot>
     </TABLe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates vitae ipsum magni itaque consequatur aspernatur accusantium, ipsam aliquid ipsa hic debitis tempora aut quos molestias. A possimus exercitationem Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae cupiditate nesciunt atque ab nemo eos voluptatum tenetur doloribus voluptas reiciendis, eius pariatur tempora, perspiciatis quas corporis sunt iure est beatae!Lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium vero consequuntur dolorum eligendi impedit omnis recusandae ex non tempore id nesciunt in ab repudiandae ipsam, amet nisi sed expedita  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla perferendis a laudantium facilis libero dolores, sed non sapiente maxime odit? Totam culpa magnam commodi explicabo quibusdam alias nobis minus architecto! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore delectus ea pariatur dignissimos animi maiores, odio, odit ullam eligendi omnis similique. Aut corrupti quod hic tempora sint eum, laborum quasi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit fugiat cupiditate, magni ipsa, ipsam quae consequuntur ducimus eveniet, est molestias temporibus. Repellat deserunt sed harum placeat a fugit, fugiat asperiores! </laborum></voluptatibus></p>
 </body>
 </html>
