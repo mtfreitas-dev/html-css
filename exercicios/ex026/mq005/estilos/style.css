@@ -16,13 +16,12 @@ header h1{
 }
 
 i#burguer{
-    background-color: black;
-    display: block;
+    background-color: rgba(0, 0, 0, 0.856);
     color: white;
+    display: block;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
     cursor: pointer;
-    margin: 0px;
 }
 
 i#burguer:hover{
